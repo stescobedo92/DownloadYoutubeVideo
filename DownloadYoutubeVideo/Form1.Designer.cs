@@ -34,9 +34,9 @@ namespace DownloadYoutubeVideo
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.tabUser = new System.Windows.Forms.TabPage();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabOnlineSupport = new System.Windows.Forms.TabPage();
             this.tabSettings = new System.Windows.Forms.TabPage();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.materialTabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,16 +79,6 @@ namespace DownloadYoutubeVideo
             this.tabUser.TabIndex = 1;
             this.tabUser.Text = "User";
             // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "add_user_male_32px.png");
-            this.imageList1.Images.SetKeyName(1, "home_32px.png");
-            this.imageList1.Images.SetKeyName(2, "online_support_32px.png");
-            this.imageList1.Images.SetKeyName(3, "settings_32px.png");
-            // 
             // tabOnlineSupport
             // 
             this.tabOnlineSupport.BackColor = System.Drawing.Color.White;
@@ -109,12 +99,24 @@ namespace DownloadYoutubeVideo
             this.tabSettings.TabIndex = 3;
             this.tabSettings.Text = "Settings";
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "add_user_male_32px.png");
+            this.imageList1.Images.SetKeyName(1, "home_32px.png");
+            this.imageList1.Images.SetKeyName(2, "online_support_32px.png");
+            this.imageList1.Images.SetKeyName(3, "settings_32px.png");
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(710, 474);
             this.Controls.Add(this.materialTabControl1);
+            this.DrawerShowIconsWhenHidden = true;
+            this.DrawerTabControl = this.materialTabControl1;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Download Youtube Video";
