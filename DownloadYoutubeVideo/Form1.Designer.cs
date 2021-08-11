@@ -161,6 +161,7 @@ namespace DownloadYoutubeVideo
             this.btnResume.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnResume.UseAccentColor = false;
             this.btnResume.UseVisualStyleBackColor = true;
+            this.btnResume.Click += new System.EventHandler(this.btnResume_Click);
             // 
             // btnPause
             // 
@@ -179,6 +180,7 @@ namespace DownloadYoutubeVideo
             this.btnPause.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnPause.UseAccentColor = false;
             this.btnPause.UseVisualStyleBackColor = true;
+            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
             // 
             // percentLabel
             // 
@@ -273,6 +275,7 @@ namespace DownloadYoutubeVideo
             this.btnStart.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnStart.UseAccentColor = false;
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // tabUser
             // 
@@ -281,7 +284,7 @@ namespace DownloadYoutubeVideo
             this.tabUser.Location = new System.Drawing.Point(4, 39);
             this.tabUser.Name = "tabUser";
             this.tabUser.Padding = new System.Windows.Forms.Padding(3);
-            this.tabUser.Size = new System.Drawing.Size(696, 364);
+            this.tabUser.Size = new System.Drawing.Size(707, 364);
             this.tabUser.TabIndex = 1;
             this.tabUser.Text = "User";
             // 
@@ -291,7 +294,7 @@ namespace DownloadYoutubeVideo
             this.tabOnlineSupport.ImageKey = "online_support_32px.png";
             this.tabOnlineSupport.Location = new System.Drawing.Point(4, 39);
             this.tabOnlineSupport.Name = "tabOnlineSupport";
-            this.tabOnlineSupport.Size = new System.Drawing.Size(696, 364);
+            this.tabOnlineSupport.Size = new System.Drawing.Size(707, 364);
             this.tabOnlineSupport.TabIndex = 2;
             this.tabOnlineSupport.Text = "Online Support";
             // 
@@ -301,7 +304,7 @@ namespace DownloadYoutubeVideo
             this.tabSettings.ImageKey = "settings_32px.png";
             this.tabSettings.Location = new System.Drawing.Point(4, 39);
             this.tabSettings.Name = "tabSettings";
-            this.tabSettings.Size = new System.Drawing.Size(696, 364);
+            this.tabSettings.Size = new System.Drawing.Size(707, 364);
             this.tabSettings.TabIndex = 3;
             this.tabSettings.Text = "Settings";
             // 
